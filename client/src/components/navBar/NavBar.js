@@ -73,7 +73,7 @@ export default function NavBar() {
                 className={styles.link}
             >
                 <p className={styles.title} data-text="VideoGames">
-                    VideoGames
+                    Choose a videoGame
                 </p>
             </Link>
             <Link
@@ -81,7 +81,7 @@ export default function NavBar() {
                 className={styles.optionBar}
                 style={{ textDecoration: "none" }}
             >
-                New Game
+                Create a videoGame
             </Link>
             <select
                 className={styles.select}
@@ -148,14 +148,14 @@ export default function NavBar() {
 
             <SearchBar setFilterBy={setFilterBy} setOrderBy={setOrderBy} />
 
-            <button onClick={handleToggleTheme} className={styles.btnLightDark}>
+            {/* <button onClick={handleToggleTheme} className={styles.btnLightDark}>
                 {
                     theme === "light"
                     ? <BsFillSunFill />
                     : <MdDarkMode />
                     
                 }
-            </button>
+            </button> */}
             
         </div>
     );

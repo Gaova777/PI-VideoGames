@@ -10,7 +10,7 @@
 
 .form .card {
     display: flex;
-    background-color: var(--card-color);
+    background-color: black;
     border-radius: 0.4rem;
     overflow: hidden;
     box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
@@ -37,7 +37,7 @@
 .form .card .text {
     align-self: center;
     font-size: 42px;
-    color: chocolate;
+    color: rgb(158, 48, 28);
 }
 
 .inputDecorated {
@@ -62,8 +62,8 @@
 }
 
 .inputDecorated:focus {
-    border-color: #00ccff;
-    box-shadow: 0 0 8px 0 #00ccff;
+    border-color: #fc7474;
+    box-shadow: 0 0 8px 0 #fc7474;
 }
 
 .inputDecorated:after {
@@ -92,8 +92,8 @@
 }
 
 .select:focus {
-    border-color: #00ccff;
-    box-shadow: 0 0 8px 0 #00ccff;
+    border-color: #fc7474;
+    box-shadow: 0 0 8px 0 #fc7474;
 }
 
 .line {
@@ -106,18 +106,18 @@
 .danger {
     display: flex;
     flex-direction: column;
-    color: red;
-    font-size: small;
+    color: rgb(255, 0, 0);
+    font-size:medium;
     /* width: 20rem; */
 }
 
 .btn {
     margin: 30px 20px 0px 0px; 
     width: 150px;
-    color: #00ccff;
+    color: #fc7474;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
-    border: 2px solid #00ccff;
+    border: 2px solid #fc7474;
     background-color: var(--bg-color);
     padding: 10px 10px 10px 10px;
     font-size: 16px;
@@ -128,7 +128,7 @@
 
 .btn:hover {
     color: #000000;
-    background-color: #00ccff;
+    background-color: #fc7474;
     cursor: pointer;
     transition-property: all;
     transition-duration: 0.5s;

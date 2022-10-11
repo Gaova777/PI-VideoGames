@@ -43,10 +43,10 @@
 .detailBtnBack {
     margin: 30px 0px 0px 0px;
     width: 150px;
-    color: #00ccff;
+    color: #ff6a6a;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
-    border: 2px solid #00ccff;
+    border: 2px solid #ff6a6a;
     background-color: var(--bg-color);
     padding: 10px 10px 10px 10px;
     font-size: 16px;
@@ -57,7 +57,7 @@
 
 .detailBtnBack:hover {
     color: #000000;
-    background-color: #00ccff;
+    background-color: #ff6a6a;
     cursor: pointer;
     transition-property: all;
     transition-duration: 0.5s;

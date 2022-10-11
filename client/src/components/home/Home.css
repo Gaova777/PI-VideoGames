@@ -1,7 +1,7 @@
 body {
-    --bg-color: #111D2B;
+    --bg-color: #270000;
     --text-color: #ffffff;
-    --card-color: #253743;
+    --card-color: #250101d7;
     background-color: var(--bg-color);
 }
 
@@ -30,7 +30,7 @@ body {
 
 .grid-item {
     /* padding: 20px; */
-    background-color: #253743;
+    background-color: #0000004d;
     border-radius: 0.4rem;
     overflow: hidden;
     box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
@@ -41,7 +41,7 @@ body {
 
 .grid-item:hover {
     transform: scale(1.1) translateY(-5.5%);
-    box-shadow: 0 4rem 8rem rgba(0, 204, 255, 0.3);
+    box-shadow: 0 4rem 8rem rgba(255, 120, 120, 0.555);
 }
 
 @media (max-width: 1700px) {

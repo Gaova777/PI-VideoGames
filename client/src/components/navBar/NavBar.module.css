@@ -1,12 +1,35 @@
 .navbar {
     /* --bg-color: #111D2B; */
+    background-color: var(--bg-color); 
+  background-color: rgb(0, 0, 0);
+  padding-top: 1.5rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: flex-start;
+   height: 8rem;
+}
+/* 
+   --bg-color: #111D2B;
+     background-color: var(--bg-color); *
+   background-color: rgb(34, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    height: 4rem;
+} */ 
+
+/* .navbar {
+    /* --bg-color: #111D2B; 
     background-color: var(--bg-color);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     height: 4rem;
-}
+} */
+
 
 .navbar .link {
     display: flex;
@@ -16,13 +39,13 @@
 
 .navbar .title {
     font-size: 40px;
-    color: #00aeff;
+    color: #ff5d5d;
 }
 
 .navbar .title::before {
     position: absolute;
     content: attr(data-text);
-    text-shadow: 0px 0px 20px #00aeff;
+    text-shadow: 0px 55px 0px #ff9e4e;
     filter: blur(10px) brightness(0);
     animation: flicker 2s linear forwards infinite;
     animation-delay: 1s;
@@ -76,7 +99,7 @@
 
 .navbar .optionBar {
     font-size: 20px;
-    color: var(--text-color);
+    color: rgba(255, 255, 255, 0.63);;
     margin: 25px 50px 0px 40px;
 }
 
@@ -85,20 +108,21 @@
     padding: 0px 30px 0px 10px;
     height: 40px;
     margin-top: 20px;
-    border: 2px solid var(--text-color);
-    border-radius: 15px;
+    border: 2px solid rgb(102, 101, 101);
+    border-radius: 5px;
     outline: none;
     box-sizing: border-box;
     transition: .3s;
     font-size: 16px;
     background-color: var(--bg-color);
-    color: var(--text-color);
+    color: rgba(255, 255, 255, 0.63);
+    justify-content: center;
 
 }
 
 .select:focus {
-    border-color: #00ccff;
-    box-shadow: 0 0 8px 0 #00ccff;
+    border-color: #ff7664;
+    box-shadow: 0 0 8px 0 #ff7664;
 }
 
 .btn {
@@ -107,11 +131,11 @@
     height: 40px;
     /* margin: 0px 0px 0px 0px;  */
     width: 130px;
-    color: var(--text-color);
+    color:rgba(255, 255, 255, 0.63);
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
-    border: 2px solid var(--text-color);
-    background-color: var(--bg-color);
+    border: 2px solid rgb(102, 101, 101);
+    background-color:var(--bg-color);
     padding: 1px 1px 1px 1px;
     font-size: 16px;
     border-radius: 15px;
@@ -120,9 +144,9 @@
 }
 
 .btn:hover {
-    color: #00ccff;
+    color: #ff7664;
     background-color: var(--bg-color);
-    border: 2px solid #00ccff;
+    border: 2px solid #ff7664;
     cursor: pointer;
     transition-property: all;
     transition-duration: 0.5s;
@@ -147,9 +171,9 @@
 }
 
 .btnLightDark:hover {
-    color: #00ccff;
+    color: #ff6e6e;
     background-color: var(--bg-color);
-    border: 2px solid #00ccff;
+    border: 2px solid #ff9393;
     cursor: pointer;
     transition-property: all;
     transition-duration: 0.5s;

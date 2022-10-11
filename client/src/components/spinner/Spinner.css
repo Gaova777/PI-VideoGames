@@ -9,7 +9,7 @@
     position: relative;
     width: 100%;
     height: 10px;
-    border: 1px solid #00ccff;
+    border: 1px solid #fc8038;
     border-radius: 10px;
     animation: turn 4s linear 1.75s infinite;
 }
@@ -20,8 +20,8 @@
     position: absolute;
     width: 0;
     height: 100%;
-    background-color: #00ccff;
-    box-shadow: 10px 0px 15px 0px #00ccff;
+    background-color: #fc8038;
+    box-shadow: 10px 0px 15px 0px #fc8038;
     animation: load 2s linear infinite;
 }
 
@@ -29,7 +29,7 @@
     position: absolute;
     width: 100%;
     top: 10px;
-    color: #00ccff;
+    color: #ff7c48;
     font-size: 22px;
     text-align: center;
     animation: bounce 2s linear infinite;

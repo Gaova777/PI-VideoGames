@@ -8,10 +8,10 @@
 .Btn {
     margin: 0px 10px 0px 0px; 
     width: 40px;
-    color: #00ccff;
+    color: #ff6d6d;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
-    border: 2px solid #00ccff;
+    border: 2px solid #ff6d6d;
     background-color: var(--bg-color);
     padding: 5px 5px 5px 5px;
     font-size: 16px;
@@ -22,7 +22,7 @@
 
 .Btn:hover {
     color: #000000;
-    background-color: #00ccff;
+    background-color: #ff6d6d;
     cursor: pointer;
     transition-property: all;
     transition-duration: 0.5s;
@@ -31,10 +31,10 @@
 .BtnDisabled {
     margin: 0px 10px 0px 0px; 
     width: 40px;
-    color: #878888;
+    color: #8f6f6f;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
-    border: 2px solid #878888;
+    border: 2px solid #8f6f6f;
     background-color: var(--bg-color);
     padding: 5px 5px 5px 5px;
     font-size: 16px;
@@ -49,8 +49,8 @@
     color: white;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
-    border: 2px solid #00ccff;
-    background-color: #00ccff;
+    border: 2px solid #ff6d6d;
+    background-color: #ff6d6d;
     padding: 5px 5px 5px 5px;
     font-size: 16px;
     border-radius: 5px;
