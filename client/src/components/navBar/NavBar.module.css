@@ -1,0 +1,184 @@
+.navbar {
+    /* --bg-color: #111D2B; */
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    height: 4rem;
+}
+
+.navbar .link {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+.navbar .title {
+    font-size: 40px;
+    color: #00aeff;
+}
+
+.navbar .title::before {
+    position: absolute;
+    content: attr(data-text);
+    text-shadow: 0px 0px 20px #00aeff;
+    filter: blur(10px) brightness(0);
+    animation: flicker 2s linear forwards infinite;
+    animation-delay: 1s;
+}
+
+@keyframes flicker {
+    0% {
+        filter: blur(5px) brightness(1);
+    }
+
+    3% {
+        filter: blur(5px) brightness(0);
+    }
+
+    6% {
+        filter: blur(5px) brightness(0);
+    }
+
+    7% {
+        filter: blur(5px) brightness(1);
+    }
+
+    8% {
+        filter: blur(5px) brightness(0);
+    }
+
+    9% {
+        filter: blur(5px) brightness(1);
+    }
+
+    10% {
+        filter: blur(5px) brightness(0);
+    }
+
+    20% {
+        filter: blur(5px) brightness(1);
+    }
+
+    50% {
+        filter: blur(5px) brightness(1);
+    }
+
+    99% {
+        filter: blur(5px) brightness(0);
+    }
+
+    100% {
+        filter: blur(5px) brightness(1);
+    }
+}
+
+.navbar .optionBar {
+    font-size: 20px;
+    color: var(--text-color);
+    margin: 25px 50px 0px 40px;
+}
+
+.select {
+    margin-left: 20px;
+    padding: 0px 30px 0px 10px;
+    height: 40px;
+    margin-top: 20px;
+    border: 2px solid var(--text-color);
+    border-radius: 15px;
+    outline: none;
+    box-sizing: border-box;
+    transition: .3s;
+    font-size: 16px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+}
+
+.select:focus {
+    border-color: #00ccff;
+    box-shadow: 0 0 8px 0 #00ccff;
+}
+
+.btn {
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 40px;
+    /* margin: 0px 0px 0px 0px;  */
+    width: 130px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    border: 2px solid var(--text-color);
+    background-color: var(--bg-color);
+    padding: 1px 1px 1px 1px;
+    font-size: 16px;
+    border-radius: 15px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.btn:hover {
+    color: #00ccff;
+    background-color: var(--bg-color);
+    border: 2px solid #00ccff;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.btnLightDark {
+    margin-top: 20px;
+    margin-left: 70px;
+    height: 40px;
+    /* margin: 0px 0px 0px 0px;  */
+    width: 40px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    border: 2px solid var(--bg-color);
+    background-color: var(--bg-color);
+    padding: 1px 1px 1px 1px;
+    font-size: 16px;
+    border-radius: 15px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.btnLightDark:hover {
+    color: #00ccff;
+    background-color: var(--bg-color);
+    border: 2px solid #00ccff;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+@media (max-width: 1600px) {
+    .select {
+        padding: 0px 0px 0px 0px;
+        font-size: 16px;
+        margin-left: 0.3rem;
+    }
+    .btnLightDark {
+        margin-left: 0.5rem;
+    }
+    .navbar .title {
+        font-size: 40px;
+    }
+    .navbar .optionBar {
+        font-size: 20px;
+        margin: 20px 10px 0px 10px;
+        /* white-space: nowrap;
+  	    overflow: hidden;
+  	    text-overflow: ellipsis; */
+    }
+}
+
+@media (max-width: 1100px) {
+    .navbar .title {
+        font-size: 1px;
+        visibility: hidden;
+    }
+}

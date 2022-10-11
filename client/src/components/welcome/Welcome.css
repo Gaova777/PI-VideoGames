@@ -1,0 +1,87 @@
+
+.main_class {
+    display: flex;
+    background-image: url(../../assets/bg_welcome.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    width: 100%;
+    height: 120vh;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.btn_welcome {
+    position: relative;
+    padding: 22px 124px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    margin: 273px 448px;
+    text-decoration: none;
+    transition: 1s;
+    border-radius: 50px;
+    overflow: hidden;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0004);
+    width: 150px;
+}
+
+.btn_welcome:hover {
+    background: #ff2e1f;
+    box-shadow: 0 0 10px #ff2e1f,
+        0 0 30px #ff2e1f,
+        0 0 60px #ff2e1f,
+        0 0 100px #ff2e1f;
+}
+
+.btn_welcome:before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 400%;
+    background: #ff8e31;
+    transition: 2s;
+    animation: animate 5s linear infinite;
+    animation-delay: calc(0.33s * 1);
+}
+
+.btn_welcome:hover:before {
+    width: 120%;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.btn_welcome:after {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: #750101;
+}
+
+.btn_welcome:hover:after {
+    background: #ff4040;
+}
+
+.btn_welcome span {
+    position: relative;
+    z-index: 1;
+    font-size: 2em;
+    color: #fff;
+    opacity: 0.5;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    transition: 0.5s;
+}
+
+.btn_welcome:hover span {
+    opacity: 1;
+}

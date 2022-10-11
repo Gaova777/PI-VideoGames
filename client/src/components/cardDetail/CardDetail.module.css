@@ -1,0 +1,81 @@
+.detailVista {
+    display: flex;
+    flex-direction: row;
+}
+
+.detailImg {
+    display: block;
+    width: 50%;
+    height: 46rem;
+    object-fit: cover;
+    margin: 80px 0px 0px 50px;
+    border-radius: 10px;
+}
+
+.detailContent {
+    display: flex;
+    flex-direction: column;
+    margin: 70px 0px 0px 70px;
+    justify-content: space-between;
+}
+
+.detailTitulo {
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--text-color);
+    width: 700px;
+}
+
+.detailDescripcion {
+    width: 80%;
+    /* max-height: 30px; */
+    color: var(--text-color);
+    margin: 0px
+}
+
+.detailGeneros,
+.detailPlataformas,
+.detailRating,
+.detailReleased {
+    color: var(--text-color);
+}
+
+.detailBtnBack {
+    margin: 30px 0px 0px 0px;
+    width: 150px;
+    color: #00ccff;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    border: 2px solid #00ccff;
+    background-color: var(--bg-color);
+    padding: 10px 10px 10px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.detailBtnBack:hover {
+    color: #000000;
+    background-color: #00ccff;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.space {
+    margin-left: 10px;
+    padding: 9px 10px 10px 10px;
+}
+
+@media (max-width: 1350px) {
+    .detailImg {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1150px) {
+    .detailImg {
+        width: 30%;
+    }
+}

@@ -1,0 +1,68 @@
+.notFound {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-self: center;
+    color: var(--text-color);
+    /* border: solid 2px white; */
+}
+
+.notFound .card {
+    display: flex;
+    background-color: var(--card-color);
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    /* cursor: pointer; */
+    transition: 0.2s;
+    margin: 30px 0px 0px 10px;
+    /* border: solid 2px white; */
+    height: 40rem;
+    width: 65rem;
+}
+
+.notFound .card .img {
+    background-image: url(../../assets/not_found.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60vh;
+    width: 60vh;
+    height: 50vh;
+    align-self: center;
+}
+
+.notFound .card .text {
+    align-self: center;
+    font-size: 42px;
+    color: chocolate;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 3rem;
+}
+
+.btn {
+    margin: 30px 20px 0px 0px;
+    width: 150px;
+    color: #00ccff;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    border: 2px solid #00ccff;
+    background-color: #111D2B;
+    padding: 10px 10px 10px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.btn:hover {
+    color: #000000;
+    background-color: #00ccff;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
