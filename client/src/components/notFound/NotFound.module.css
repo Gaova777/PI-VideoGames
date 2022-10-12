@@ -35,7 +35,7 @@
 .notFound .card .text {
     align-self: center;
     font-size: 42px;
-    color: chocolate;
+    color: rgb(210, 30, 30);
 }
 
 .bottom {
@@ -47,11 +47,11 @@
 .btn {
     margin: 30px 20px 0px 0px;
     width: 150px;
-    color: #00ccff;
+    color: #ff6565;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
-    border: 2px solid #00ccff;
-    background-color: #111D2B;
+    border: 2px solid #ff6565;
+    background-color: #000000;
     padding: 10px 10px 10px 10px;
     font-size: 16px;
     border-radius: 5px;
@@ -61,7 +61,7 @@
 
 .btn:hover {
     color: #000000;
-    background-color: #00ccff;
+    background-color: #ff6565;
     cursor: pointer;
     transition-property: all;
     transition-duration: 0.5s;

@@ -5,7 +5,7 @@ const Spinner = () => {
     return (
         <div className="loader">
             <div className="loading_1"></div>
-            <div className="loading_2">Loading...</div>
+            {/* <div className="loading_2">Loading...</div> */}
         </div>
     );
 };

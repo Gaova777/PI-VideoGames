@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { BsFillSunFill } from 'react-icons/bs';
-import { MdDarkMode } from "react-icons/md";
+// import { BsFillSunFill } from 'react-icons/bs';
+// import { MdDarkMode } from "react-icons/md";
 import { Link } from "react-router-dom";
 import {
     changePage,
@@ -22,8 +22,8 @@ export default function NavBar() {
     const [origenBy, setOrigenBy] = useState(origenState);
     const [platformBy, setPlataformBy] = useState(platformState);
 
-    let themeSaved = window.localStorage.getItem("theme");
-    const [theme, setTheme] = useState(themeSaved || "dark");
+    // let themeSaved = window.localStorage.getItem("theme");
+    // const [theme, setTheme] = useState(themeSaved || "dark");
 
     const setSelects = (order = "", filter = "", origen = "", platform = "") => {
         setOrderBy(order);
@@ -57,13 +57,13 @@ export default function NavBar() {
         setSelects();
     };
 
-    const handleToggleTheme = () => {
-        window.localStorage.setItem("theme", theme === "light" ? "dark" : "light");
-        setTheme(theme === "light" ? "dark" : "light");
-        document.body.classList.toggle("light");
-    };
+    // const handleToggleTheme = () => {
+    //     window.localStorage.setItem("theme", theme === "light" ? "dark" : "light");
+    //     setTheme(theme === "light" ? "dark" : "light");
+    //     document.body.classList.toggle("light");
+    // };
 
-    if (theme === "light") document.body.classList.add("light");//recordad, accedo a los elementos de clase del dom y añado mi light
+    // if (theme === "light") document.body.classList.add("light");//recordad, accedo a los elementos de clase del dom y añado mi light
 
     return (
         <div name="navBarContainer" className={styles.navbar}>
@@ -90,7 +90,7 @@ export default function NavBar() {
                 id="order-select"
                 onChange={handleChangeOrder}
             >
-                <option value="">-- Order --</option>
+                <option value=""> Order </option>
                 <option value="abc-asc">A-Z</option>
                 <option value="abc-desc">Z-A</option>
                 <option value="rating-asc">Rating +</option>
@@ -104,7 +104,7 @@ export default function NavBar() {
                 id="plataformas-select"
                 onChange={handleChangePlataform}
             >
-                <option value="">-- Platform --</option>
+                <option value=""> Platform </option>
                 <option value="android">Android</option>
                 <option value="apple macintosh">Apple Macintosh</option>
                 <option value="linux">Linux</option>
@@ -121,7 +121,7 @@ export default function NavBar() {
                 id="genre-select"
                 onChange={handleChangeFilter}
             >
-                <option value="">-- Genre --</option>
+                <option value=""> Genre </option>
                 {allGenres &&
                     allGenres.map((g) => (
                         <option key={g.name} value={g.name}>
@@ -137,7 +137,7 @@ export default function NavBar() {
                 value={origenBy}
                 onChange={handleChangeOrigen}
             >
-                <option value="">-- Source --</option>
+                <option value=""> Source </option>
                 <option value="api">API WEB</option>
                 <option value="db">DB</option>
             </select>

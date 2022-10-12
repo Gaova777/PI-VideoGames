@@ -2,7 +2,7 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import styles from "./NotFound.module.css";
 
-export default function NotFound({ msg = "Ups no hay juegos!" }) {
+export default function NotFound({ msg = "No VideoGames!" }) {
     const history = useHistory();
     return (
         <div className={styles.notFound}>
@@ -15,7 +15,7 @@ export default function NotFound({ msg = "Ups no hay juegos!" }) {
                             className={styles.btn}
                             onClick={() => history.push("/home")}
                         >
-                            go Home
+                            Back
                         </button>
                     </div>
                 )}

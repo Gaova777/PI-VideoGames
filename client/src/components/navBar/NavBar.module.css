@@ -38,7 +38,8 @@
 }
 
 .navbar .title {
-    font-size: 40px;
+    display: flex;
+    font-size: 30px;
     color: #ff5d5d;
 }
 
