@@ -116,8 +116,8 @@ function rootReducer(state = initialState, action) {
         const filtered =
             typeof state.filteredVideoGames !== "string"
                 ? state.filteredVideoGames.filter((game) =>
-                      game.platforms.toLowerCase().includes(action.payload)
-                  )
+                    game.platforms.toLowerCase().includes(action.payload)
+                )
                 : [];
         return {
             ...state,

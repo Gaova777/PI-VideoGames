@@ -100,7 +100,7 @@
 
 .navbar .optionBar {
     font-size: 20px;
-    color: rgba(255, 255, 255, 0.63);;
+    color: rgba(255, 255, 255, 0.795);;
     margin: 25px 50px 0px 40px;
 }
 
@@ -116,7 +116,7 @@
     transition: .3s;
     font-size: 16px;
     background-color: var(--bg-color);
-    color: rgba(255, 255, 255, 0.63);
+    color: rgba(255, 255, 255, 0.699);
     justify-content: center;
 
 }
@@ -132,7 +132,7 @@
     height: 40px;
     /* margin: 0px 0px 0px 0px;  */
     width: 130px;
-    color:rgba(255, 255, 255, 0.63);
+    color:rgba(255, 255, 255, 0.733);
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
     border: 2px solid rgb(102, 101, 101);

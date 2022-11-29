@@ -16,7 +16,7 @@ import styles from "./NavBar.module.css";
 export default function NavBar() {
     const dispatch = useDispatch();
     const { allGenres, filterState, origenState, orderState, platformState } =
-        useSelector((state) => state);
+        useSelector((state) => state);//we take all origen state of this variables, from the redux state
     const [orderBy, setOrderBy] = useState(orderState);
     const [filterBy, setFilterBy] = useState(filterState);
     const [origenBy, setOrigenBy] = useState(origenState);
